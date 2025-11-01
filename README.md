@@ -108,6 +108,26 @@ J'utiliserai la commande `sh
 docker pull
 `
 
+## TD3 
 
+### Intégration Continue
+
+#### Question 2 
+
+Pour créer les tests j'ai [utilisé ChatGPT](https://chatgpt.com) ainsi que la [documentation Github](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax) 
+
+#### Question 3 
+
+Pour lance les tests, je vais dans l'onglet Action puis je clique sur le nom du test et enfin je clique sur le bouton pour lancer les tests dans le sous onglet latéral Jobs
+
+#### Question 4
+
+La question était *Écrivez un jeu de tests pour votre application avec Jest, et vérifiez son exécution. Pourquoi écrit-on un tel jeu de tests ?*
+
+L'objectif du jeu de test est de les vérifier à commit pour garantir que la nouvelle version est toujours fonctionnel et ne détériore pas certaines caractéristiques du projet.
+
+### Livraison Continue
+
+<
 
 
