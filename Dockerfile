@@ -29,7 +29,7 @@ COPY Cloud/tsconfig.json /app
 
 COPY Cloud/src/ /app/src/
 COPY Cloud/tests/ /app/tests/
-COPY Cloud/dist/ /app/dist/
+# COPY Cloud/dist/ /app/dist/
 
 RUN apk add npm
 RUN npm install
