@@ -80,3 +80,7 @@ L'objectif du jeu de test est de les vérifier à commit pour garantir que la no
 On utilise les secrets Github pour éviter les problèmes de sécurité et de divulgation de mots de passe.
 
 J'ai eu de nombreux pronblèmes concernant la mise en place du test de publication de l'image Docker, le principal concerne les permissions accordées aux workflows. Vu que le workflow de publication est lancé par la réussite de l'intégration continue il a fallu accorder les permission en écriture aux deux. De plus l'emploi d'un secret simple ne foncitonnant pas j'ai utilisé un token d'accès personnel. Je pensais que le nom de l'image à publier était sensible à la casse mais finalement non, il n'a pas besoin d'être identique au nom du dépôt. Finalement l'erreur venait d'un problème d'accès du Token Docker et non pas de GitHub Container Registry. 
+
+## Déploiement continu sur PaaS
+
+J'ai rencontré des difficultés lors du déploiement nottament pour un problème de compatibilité de plateforme qui n'a pu être résolu qu'en modifiant mon build Docker pour permettre un build sous plusieurs plateformes
