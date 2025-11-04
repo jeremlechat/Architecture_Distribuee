@@ -45,6 +45,7 @@ jobs:
         with:
           context: .
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/architecture_distribuee:latest
             ghcr.io/${{ github.repository_owner }}/architecture_distribuee:latest  
